@@ -8,7 +8,7 @@ import json
 analyzer = SentimentIntensityAnalyzer()
 
 
-def prepareSentences(text):
+def prepareSentences(text : str) -> list :
     # remove URLs and other escaped hyperlinks between "< >"
     # print(text)
     text = re.sub(r'<(.*?)>', "", text)
@@ -16,7 +16,7 @@ def prepareSentences(text):
     return sentences
 
 
-def analyzeIncoming(data):
+def analyzeIncoming(data : List) -> dict:
     results = []
 
     #print("data: ", data)
