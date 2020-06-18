@@ -12,7 +12,6 @@ app = new App({
 });
 
 receiver.router.get('/secret-page', (req, res) => {
-	// You're working with an express req and res now.
 	res.send('yay!');
 });
 
@@ -31,9 +30,6 @@ app.command ('/vader_analyze', async ({payload, ack, say}) => {
 
 
 }); 
-// All the room in the world for your code
-
-// Make a note of the channel
 
 
 
