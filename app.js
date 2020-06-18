@@ -11,7 +11,7 @@ app = new App({
 	receiver
 });
 
-receiver.router.get('/secret-page', (req, res) => {
+receiver.router.get('/analysis_results', (req, res) => {
 	res.send('yay!');
 });
 
