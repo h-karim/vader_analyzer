@@ -27,7 +27,7 @@ def prepareSentences(text: str) -> list:
     return sentences
 
 
-def analyzeIncoming(data: List) -> dict:
+def analyzeIncoming(data: list) -> dict:
     """Perform a VADER sentiment analysis on individual
     sentences and returns the results as a list of dictionaries
 
